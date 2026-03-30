@@ -1,0 +1,255 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinical Yoga Programs | PCOS, Infertility & Wellness | Shringarika Mishra</title>
+    <meta name="description" content="Evidence-based 1-on-1 yoga programs for PCOS, Infertility, Prenatal, Stress, and Senior Wellness. 24 session protocols by Gold Medalist Shringarika Mishra.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        body { font-family: 'Poppins', sans-serif; scroll-behavior: smooth; color: #111827; }
+        .dot-bg { background-image: radial-gradient(#e5e7eb 1px, transparent 1px); background-size: 20px 20px; }
+        
+        /* Dynamic Tab Logic */
+        .tab-content { display: none; }
+        .tab-content.active { display: block; animation: fadeInUp 0.5s ease forwards; }
+        .tab-btn.active { border-color: #16a34a; background-color: #f0fdf4; transform: translateY(-5px); box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); }
+        .tab-btn.active i { color: #16a34a; }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .whatsapp-float {
+            position: fixed; bottom: 30px; right: 30px;
+            background-color: #25d366; color: white;
+            border-radius: 50px; padding: 12px 24px;
+            font-size: 16px; font-weight: 600;
+            box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4);
+            z-index: 1000; display: flex; align-items: center; gap: 10px;
+            transition: all 0.3s;
+        }
+        .whatsapp-float:hover { transform: scale(1.05); background-color: #20b858; }
+    </style>
+</head>
+<body class="bg-white dot-bg">
+
+    <nav class="sticky top-0 bg-white/95 backdrop-blur-sm shadow-sm z-50 py-4 border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+            <div class="flex flex-col">
+                <a href="index.html" class="text-2xl font-black tracking-tight text-[#0f172a]">SHRINGARIKA<span class="text-green-600">.</span></a>
+                <span class="text-[10px] tracking-widest text-gray-400 font-bold uppercase">Clinical Research Specialist</span>
+            </div>
+            <div class="hidden lg:flex space-x-8 items-center font-medium text-gray-600">
+                <a href="index.html" class="hover:text-green-600 transition">Home</a>
+                <a href="mailto:onlineyogaclassbyshri@gmail.com" class="hover:text-green-600 transition">Email Support</a>
+                <a href="https://wa.me/916391199997" class="bg-[#0f172a] text-white px-6 py-2 rounded-full font-semibold hover:bg-gray-800 transition">Join WhatsApp</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="py-16 text-center bg-white">
+        <h1 class="text-4xl md:text-6xl font-black text-gray-900 mb-4 tracking-tight">Our Specialized Programs</h1>
+        <p class="text-gray-500 max-w-2xl mx-auto px-4">Evidence-based clinical yoga protocols designed to address root causes and restore hormonal harmony.</p>
+    </header>
+
+    <section class="max-w-7xl mx-auto px-4 mb-12">
+        <div class="grid grid-cols-2 md:grid-cols-5 gap-3">
+            <button onclick="openTab(event, 'infertility')" class="tab-btn active p-6 rounded-3xl border border-gray-200 bg-white transition-all flex flex-col items-center text-center">
+                <i class="fas fa-baby text-gray-400 text-3xl mb-3"></i>
+                <span class="font-bold text-xs uppercase tracking-widest">Infertility</span>
+            </button>
+            <button onclick="openTab(event, 'pcos')" class="tab-btn p-6 rounded-3xl border border-gray-200 bg-white transition-all flex flex-col items-center text-center">
+                <i class="fas fa-female text-gray-400 text-3xl mb-3"></i>
+                <span class="font-bold text-xs uppercase tracking-widest">PCOS Clinic</span>
+            </button>
+            <button onclick="openTab(event, 'maternity')" class="tab-btn p-6 rounded-3xl border border-gray-200 bg-white transition-all flex flex-col items-center text-center">
+                <i class="fas fa-child text-gray-400 text-3xl mb-3"></i>
+                <span class="font-bold text-xs uppercase tracking-widest">Maternity</span>
+            </button>
+            <button onclick="openTab(event, 'stress')" class="tab-btn p-6 rounded-3xl border border-gray-200 bg-white transition-all flex flex-col items-center text-center">
+                <i class="fas fa-brain text-gray-400 text-3xl mb-3"></i>
+                <span class="font-bold text-xs uppercase tracking-widest">Stress Buster</span>
+            </button>
+            <button onclick="openTab(event, 'senior')" class="tab-btn p-6 rounded-3xl border border-gray-200 bg-white transition-all flex flex-col items-center text-center">
+                <i class="fas fa-heart text-gray-400 text-3xl mb-3"></i>
+                <span class="font-bold text-xs uppercase tracking-widest">Seniors</span>
+            </button>
+        </div>
+    </section>
+
+    <main class="max-w-7xl mx-auto px-4 pb-24">
+
+        <div id="infertility" class="tab-content active bg-white rounded-[3rem] shadow-2xl border border-gray-100 overflow-hidden">
+            <div class="grid lg:grid-cols-2">
+                <div class="p-8 md:p-16">
+                    <span class="text-green-600 font-bold uppercase tracking-widest text-xs mb-4 block">Clinical Fertility Protocol</span>
+                    <h2 class="text-4xl font-extrabold mb-6 text-gray-900 leading-tight">Overcoming Infertility Naturally</h2>
+                    <div class="space-y-4 text-gray-600 mb-8">
+                        <p><strong>Why this happens:</strong> Chronic stress, hormonal imbalances, and poor pelvic blood flow often disrupt the natural reproductive cycle.</p>
+                        <p><strong>The Solution:</strong> Clinical Yoga restores the endocrine balance. My approach utilizes specific <i>asanas</i> to enhance ovarian blood flow and <i>Pranayama</i> to lower cortisol levels.</p>
+                        <p class="text-green-700 font-bold italic"><i class="fas fa-utensils mr-2"></i> Free Personalized Diet Plan included with this program.</p>
+                    </div>
+                    <div class="bg-slate-900 text-white p-8 rounded-3xl mb-8">
+                        <div class="text-3xl font-bold mb-1">₹11,000 / $120 USD</div>
+                        <p class="text-sm opacity-80 mb-4">24 Sessions | 1-on-1 Live | Zoom or Google Meet</p>
+                        <ul class="text-xs space-y-2 opacity-60">
+                            <li>• Classes: Mon to Fri (Scheduled per your time zone)</li>
+                            <li>• Medical reports required for proper evaluation</li>
+                        </ul>
+                    </div>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="https://wa.me/916391199997?text=Hi%20Shringarika,%20I%20want%20to%20join%20your%20Infertility%20Yoga%20Program." class="bg-green-500 text-white px-8 py-4 rounded-full font-bold shadow-lg hover:bg-green-600 transition flex items-center gap-2">Join Program <i class="fab fa-whatsapp"></i></a>
+                        <a href="https://forms.gle/LGJDBfiDAqJgfW4F8" class="border-2 border-gray-200 px-8 py-4 rounded-full font-bold hover:bg-gray-50 transition">Book Free Demo</a>
+                    </div>
+                </div>
+                <div class="h-[400px] lg:h-full">
+                    <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800" alt="Fertility Yoga" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+
+        <div id="pcos" class="tab-content bg-white rounded-[3rem] shadow-2xl border border-gray-100 overflow-hidden">
+            <div class="grid lg:grid-cols-2">
+                <div class="p-8 md:p-16">
+                    <span class="text-pink-600 font-bold uppercase tracking-widest text-xs mb-4 block">Hormonal Balance Clinic</span>
+                    <h2 class="text-4xl font-extrabold mb-6 text-gray-900 leading-tight">Reverse PCOS with Science</h2>
+                    <div class="space-y-4 text-gray-600 mb-8">
+                        <p><strong>The Root Cause:</strong> Insulin resistance and metabolic imbalances. If not diagnosed timely, it can lead to chronic heart issues and metabolic disorders.</p>
+                        <p><strong>The Solution:</strong> We regulate the HPO axis through specific metabolic yoga flows and nervous system calming techniques. My approach focuses on long-term reversal, not just symptom management.</p>
+                        <p class="text-pink-700 font-bold italic"><i class="fas fa-utensils mr-2"></i> Free Clinical Nutrition Plan included.</p>
+                    </div>
+                    <div class="bg-slate-900 text-white p-8 rounded-3xl mb-8">
+                        <div class="text-3xl font-bold mb-1">₹11,000 / $120 USD</div>
+                        <p class="text-sm opacity-80">24 Sessions | 1-on-1 Live | Mon to Fri Sessions</p>
+                    </div>
+                    <a href="https://wa.me/916391199997?text=Hi%20Shringarika,%20I%20want%20to%20join%20your%20PCOS%20Clinic%20Program." class="bg-green-500 text-white px-8 py-4 rounded-full font-bold shadow-lg flex items-center justify-center md:justify-start gap-2 w-full md:w-max">Join PCOS Clinic <i class="fab fa-whatsapp"></i></a>
+                </div>
+                <div class="h-[400px] lg:h-full">
+                    <img src="https://images.unsplash.com/photo-1599447421416-3414500d18a5?auto=format&fit=crop&w=800" alt="PCOS Yoga" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+
+        <div id="maternity" class="tab-content bg-white rounded-[3rem] shadow-2xl border border-gray-100 overflow-hidden">
+            <div class="grid lg:grid-cols-2">
+                <div class="p-8 md:p-16">
+                    <span class="text-purple-600 font-bold uppercase tracking-widest text-xs mb-4 block">Maternity Care</span>
+                    <h2 class="text-4xl font-extrabold mb-6 text-gray-900 leading-tight">Prenatal & Postnatal Care</h2>
+                    <p class="text-gray-600 mb-6 leading-relaxed">Yoga aids in solving pregnancy-related fatigue and back pain while preparing the body for a safe delivery. My approach focuses on pelvic floor strength and gentle adaptive movements.</p>
+                    <p class="text-purple-700 font-bold italic mb-8"><i class="fas fa-utensils mr-2"></i> Free Maternity Diet Plan Included.</p>
+                    <div class="bg-slate-900 text-white p-8 rounded-3xl mb-8">
+                        <div class="text-3xl font-bold mb-1">₹10,000 / $110 USD</div>
+                        <p class="text-sm opacity-80">24 Sessions | 1-on-1 Live | Medical Reports Required</p>
+                    </div>
+                    <a href="https://wa.me/916391199997?text=Hi%20Shringarika,%20I%20want%20to%20join%20your%20Prenatal%20Yoga%20Program." class="bg-green-500 text-white px-8 py-4 rounded-full font-bold shadow-lg flex items-center gap-2">Join Program <i class="fab fa-whatsapp"></i></a>
+                </div>
+                <div class="h-[400px] lg:h-full">
+                    <img src="https://images.unsplash.com/photo-1571910714027-492a97ad05c7?auto=format&fit=crop&w=800" alt="Prenatal Yoga" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+
+        <div id="stress" class="tab-content bg-white rounded-[3rem] shadow-2xl border border-gray-100 overflow-hidden">
+            <div class="grid lg:grid-cols-2">
+                <div class="p-8 md:p-16">
+                    <span class="text-blue-600 font-bold uppercase tracking-widest text-xs mb-4 block">Mental Wellness</span>
+                    <h2 class="text-4xl font-extrabold mb-6 text-gray-900 leading-tight">Mental Stress Buster</h2>
+                    <p class="text-gray-600 mb-6 leading-relaxed italic">In today’s high-pressure world, working professionals often burn out. It is essential to jump into this course to regulate your nervous system and restore clarity.</p>
+                    <p class="text-gray-600 mb-6">My approach uses <i>Pranayama</i> and restorative flows to lower cortisol. Jump into this course to reclaim your mental peace and productivity.</p>
+                    <p class="text-blue-700 font-bold italic mb-8"><i class="fas fa-utensils mr-2"></i> Free Anti-Stress Diet Plan Included.</p>
+                    <div class="bg-slate-900 text-white p-8 rounded-3xl mb-8">
+                        <div class="text-3xl font-bold mb-1">₹10,000 / $110 USD</div>
+                        <p class="text-sm opacity-80">24 Sessions | Mon to Fri Sessions</p>
+                    </div>
+                    <a href="https://wa.me/916391199997?text=Hi%20Shringarika,%20I%20want%20to%20join%20the%20Stress%20Buster%20Program." class="bg-blue-600 text-white px-8 py-4 rounded-full font-bold shadow-lg flex items-center gap-2">Jump Into The Course <i class="fab fa-whatsapp"></i></a>
+                </div>
+                <div class="h-[400px] lg:h-full">
+                    <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=800" alt="Stress Management" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+
+        <div id="senior" class="tab-content bg-white rounded-[3rem] shadow-2xl border border-gray-100 overflow-hidden">
+            <div class="grid lg:grid-cols-2">
+                <div class="p-8 md:p-16">
+                    <span class="text-orange-600 font-bold uppercase tracking-widest text-xs mb-4 block">Healthy Aging</span>
+                    <h2 class="text-4xl font-extrabold mb-6 text-gray-900 leading-tight">Yoga for Seniors</h2>
+                    <p class="text-gray-600 mb-6 leading-relaxed">Age is just a number, but mobility is independence. Seniors should join this program to maintain joint vitality and cardiac health. My gentle approach ensures safety and daily comfort.</p>
+                    <p class="text-gray-900 font-bold mb-6">Avail this program today to stay active and live a pain-free, joyful life.</p>
+                    <p class="text-orange-700 font-bold italic mb-8"><i class="fas fa-utensils mr-2"></i> Free Senior Nutrition Plan Included.</p>
+                    <div class="bg-slate-900 text-white p-8 rounded-3xl mb-8">
+                        <div class="text-3xl font-bold mb-1">₹10,000 / $110 USD</div>
+                        <p class="text-sm opacity-80">24 Sessions | Adaptive Personal Care</p>
+                    </div>
+                    <a href="https://wa.me/916391199997?text=Hi%20Shringarika,%20I%20want%20to%20join%20the%20Senior%20Yoga%20Program." class="bg-orange-500 text-white px-8 py-4 rounded-full font-bold shadow-lg flex items-center gap-2">Avail This Program <i class="fab fa-whatsapp"></i></a>
+                </div>
+                <div class="h-[400px] lg:h-full">
+                    <img src="https://images.unsplash.com/photo-1512438248247-f0f2a5a8b7f0?auto=format&fit=crop&w=800" alt="Yoga for Seniors" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="bg-gray-950 text-gray-500 py-16 text-center">
+        <div class="max-w-7xl mx-auto px-4">
+            <h3 class="text-white text-2xl font-black mb-4">SHRINGARIKA<span class="text-green-500">.</span></h3>
+            <p class="text-sm mb-6">Gold Medalist (AIR 2) | Clinical Research Specialist | BHU Researcher</p>
+            <div class="flex justify-center gap-6 text-xs uppercase font-bold tracking-widest mb-8">
+                <a href="mailto:onlineyogaclassbyshri@gmail.com" class="hover:text-white transition">Email</a>
+                <a href="https://wa.me/916391199997" class="hover:text-white transition">WhatsApp</a>
+                <a href="index.html" class="hover:text-white transition">Home</a>
+            </div>
+            <p class="text-[10px] opacity-40 uppercase tracking-widest">&copy; 2026 All Rights Reserved. onlineyogaclass.in</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/916391199997?text=Hi%20Shringarika,%20I%20have%20a%20question%20about%20your%20clinical%20yoga%20programs." class="whatsapp-float">
+        <i class="fab fa-whatsapp text-2xl"></i>
+        <span>Consult Shringarika</span>
+    </a>
+
+    <script>
+        // CORE TAB FUNCTION
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].classList.remove("active");
+            }
+            tablinks = document.getElementsByClassName("tab-btn");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("active");
+            }
+            document.getElementById(tabName).classList.add("active");
+            
+            // Handle if the trigger is a button click event
+            if(evt && evt.currentTarget) {
+                evt.currentTarget.classList.add("active");
+            } else {
+                // If triggered by the auto-load script below
+                const autoBtn = document.querySelector(`button[onclick*="'${tabName}'"]`);
+                if(autoBtn) autoBtn.classList.add("active");
+            }
+
+            if (window.innerWidth < 768) {
+                document.getElementById(tabName).scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        // STEP 5 AUTOMATION: Checks the URL for #pcos, #senior, etc.
+        window.addEventListener('DOMContentLoaded', () => {
+            const hash = window.location.hash.substring(1); 
+            if (hash) {
+                openTab(null, hash);
+            }
+        });
+    </script>
+</body>
+</html>
